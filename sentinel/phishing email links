@@ -1,0 +1,5 @@
+Phishing Email Link Detection
+--> kql
+EmailUrlInfo
+| where Url contains ".php?id=" or Url matches regex @"(http[s]?://)?[a-z0-9\-\.]+\.(ru|cn|tk|xyz)"
+| project Timestamp, SenderFromAddress, Url

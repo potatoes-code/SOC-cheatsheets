@@ -1,0 +1,6 @@
+Suspicious PowerShell Execution
+--> kql
+DeviceProcessEvents
+| where FileName in~ ("powershell.exe", "pwsh.exe")
+| where ProcessCommandLine contains "IEX" or ProcessCommandLine contains "Invoke-WebRequest"
+| project Timestamp, DeviceName, InitiatingProcessAccountName, ProcessCommandLine

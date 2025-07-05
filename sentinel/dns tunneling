@@ -1,0 +1,6 @@
+DNS Tunneling Behavior
+--> kql
+DnsEvents
+| summarize QueryCount = count() by ClientIP, bin(TimeGenerated, 5m)
+| where QueryCount > 50
+| project TimeGenerated, ClientIP, QueryCount
