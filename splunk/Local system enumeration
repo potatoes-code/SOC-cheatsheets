@@ -4,7 +4,7 @@ An attacker enumeration of local priviledges
  OR Process_Command_Line="*onstart*" OR Process_Command_Line="*onlogon*" OR Process_Command_Line="*onidle*"
  OR Process_Command_Line="*create*" OR Process_Command_Line="*SYSTEM*")
 
- This is tied to priviledge escalation is billy.exe is the example
+ This is tied to priviledge escalation and billy.exe is the example
  --> spl
  source="WinEventLog:*" AND index="wineventlog" AND EventCode=4688 AND (((Creator_Process_Name="*\\cmd.exe" OR Creator_Process_Name="*\\powershell.exe") 
 AND (Process_Command_Line="New-Item*HKCU:\\software\\classes\\ms-settings\\shell\\open\\command\\*" 
