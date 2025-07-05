@@ -1,3 +1,4 @@
+#There is a csv file with base64 encoding 
 import csv #reading and writing csv files
 import base64 # to decode any values that are base 64 encoded
 
