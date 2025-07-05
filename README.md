@@ -1,2 +1,2 @@
-# Security Operattions Center 
+# Security Operations Center 
 cheatsheets for triage analysis
