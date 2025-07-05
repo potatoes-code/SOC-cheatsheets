@@ -1,0 +1,7 @@
+### 4. Multiple Account Lockouts
+Detect multiple account lockouts (EventCode 4740) within a short period.
+---> spl
+search index=winlogs EventCode=4740
+| stats count by user, src_ip
+| where count > 3
+| table _time, user, src_ip, count

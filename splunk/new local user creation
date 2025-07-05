@@ -1,0 +1,5 @@
+New Local User Account Creation
+Detect creation of new local accounts (EventCode 4720).
+-->spl
+search index=winlogs EventCode=4720
+| table _time, user, src_ip, TargetUserName

@@ -1,0 +1,7 @@
+DNS Tunneling Detection
+Look for unusually large DNS responses or frequent DNS queries from a single host.
+---> spl
+search index=dnslogs
+| stats count by src_ip, query
+| where count > 50
+| table src_ip, query, count
