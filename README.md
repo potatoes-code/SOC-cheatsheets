@@ -1,2 +1,2 @@
-# SOC-cheatsheets
-Triage analysis
+# Security Operattions Center 
+cheatsheets for triage analysis
