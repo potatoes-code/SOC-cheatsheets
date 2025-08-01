@@ -1,4 +1,4 @@
-#failedlogin csv file exported from windows evet viewer(security log)
+#failedlogin csv file exported from windows event viewer(security log)
 #there are parameters included such as eventID, timegenerated, targetusername, 
 #workstationname and ip address
 #good for spotting brute--force attacks or unathorized access attempts
